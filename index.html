@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Angular-typeahead : Am angularjs directive wrapper for Twitter Bootstrap's typeahead plugin" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Angular-typeahead</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/igreulich/angular-typeahead">View on GitHub</a>
+
+          <h1 id="project_title">Angular-typeahead</h1>
+          <h2 id="project_tagline">Am angularjs directive wrapper for Twitter Bootstrap's typeahead plugin</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/igreulich/angular-typeahead/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/igreulich/angular-typeahead/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>Angular Typeahead</h3>
+
+<p>This is my Typeahead directive. It simply wrap Twitter Bootstrap's Typeahead js plugin in a directive so your Angularjs app will 'see' your selection.</p>
+
+<h4>Use</h4>
+
+<p>You need to include the igTypeahead.js before your app, but after angular.</p>
+
+<p>This directive creates a new html element (!) called typeahead. In your markup you put <code>&lt;typeahead&gt;&lt;/typeahead&gt;</code>, and anguar with replace it with an <code>&lt;input /&gt;</code> when rendering.</p>
+
+<p>Bare minimum, <code>&lt;typeahead&gt;</code> needs a <code>choice</code>, and <code>list</code> attribute, where the value of <code>choice</code> is the model the selected choice is to be stored, and <code>list</code> is either an array of strings, or a function that returns an array of strings.</p>
+
+<p>For example…</p>
+
+<pre><code>// Load the directive
+&lt;script src="jquery.js"&gt;&lt;/script&gt;
+&lt;script src="angular.js"&gt;&lt;/script&gt;
+&lt;script src="igTypeahead.js"&gt;&lt;/script&gt;
+&lt;script src="ngApp.js"&gt;&lt;/script&gt;
+
+// In your controller
+// Include the module in your app
+var ngMyApp = angular.module('myApp', ['igTypahead']);
+
+// Model for your selected item
+$scope.selection;
+
+// List of choices
+$scope.states = ['Alabama','California','Deleware'];
+
+// In your markup
+&lt;typeahead choice="selection" list="states"&gt;&lt;/typeahead&gt;
+</code></pre>
+
+<p>You can add any other attributes to <code>&lt;typeahead&gt;</code>, such as <code>placeholder</code> or <code>autocomplete</code>, and they will just get passed along to the <code>&lt;input /&gt;</code> that Angular creates while rendering/bootstrapping.</p>
+
+<h4>Requirements</h4>
+
+<ul>
+<li>Angularjs (Tested against 1.0.1 and 1.0.4)</li>
+<li>Bootstrap Typeahead jQuery plugin (which, inturn requires jQuery) (Tested against 2.0.0 through 2.2.2)</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Angular-typeahead maintained by <a href="https://github.com/igreulich">igreulich</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
