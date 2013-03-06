@@ -20,7 +20,7 @@ For example…
 	
 	// In your controller
 	// Include the module in your app
-	ngMyApp = angular.module('myApp', ['igTypahead']);
+	var ngMyApp = angular.module('myApp', ['igTypahead']);
 	
 	// Model for your selected item
 	$scope.selection;
