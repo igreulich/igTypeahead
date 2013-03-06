@@ -12,12 +12,21 @@ Bare minimum, ```<typeahead>``` needs a ```choice```, and ```list``` attribute, 
 
 For example…
 
+	// Load the directive
+	<script src="jquery.js"></script>
+	<script src="angular.js"></script>
+	<script src="igTypeahead.js"></script>
+	<script src="ngApp.js"></script>
+	
 	// In your controller
+	// Include the module in your app
+	ngMyApp = angular.module('myApp', ['igTypahead']);
+	
 	// Model for your selected item
 	$scope.selection;
 	
 	// List of choices
-	$scope.states = ['Alabama','California','Deleware']
+	$scope.states = ['Alabama','California','Deleware'];
 	
 	// In your markup
 	<typeahead choice="selection" list="states"></typeahead>
