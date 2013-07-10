@@ -18,6 +18,9 @@ angular.module('igTypeahead', []).directive('typeahead', function(){
           return item;
         }
       });
+      scope.$watch('list',function(n,o){
+        $(element).data('typeahead').source = n;
+      },true);
     }
   };
 });
