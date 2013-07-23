@@ -18,9 +18,10 @@ angular.module('igTypeahead', []).directive('typeahead', function(){
           return item;
         }
       });
-      scope.$watch('list',function(n,o){
-        $(element).data('typeahead').source = n;
-      },true);
+      
+      scope.$watch('list', function(newList, oldList){
+        $(element).data('typeahead').source = newList;
+      } ,true);
     }
   };
 });
