@@ -1,13 +1,13 @@
 {
-  "name": "angular-typeahead",
-  "version": "0.1.0",
+  "name": "igTypeahead",
+  "version": "0.1.1",
   "author": "Ian Greulich",
   "license": "MIT",
   "description": "A wrapper for Twitter Bootstrap's typeahead plugin",
   "main": "dist/igTypeahead.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/igreulich/angular-typeahead.git"
+    "url": "https://github.com/igreulich/igTypeahead.git"
   },
   "keywords": [
     "angular",
@@ -16,9 +16,9 @@
     "directive"
   ],
   "bugs": {
-    "url": "https://github.com/igreulich/angular-typeahead/issues"
+    "url": "https://github.com/igreulich/igTypeahead/issues"
   },
-  "homepage": "https://github.com/igreulich/angular-typeahead",
+  "homepage": "https://github.com/igreulich/igTypeahead",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-copy": "^0.5.0",
