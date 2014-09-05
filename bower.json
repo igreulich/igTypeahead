@@ -1,0 +1,24 @@
+{
+  "name": "angular-typeahead",
+  "version": "0.1.0",
+  "homepage": "https://github.com/igreulich/angular-typeahead",
+  "authors": [
+    "Ian Greulich <ian@greulich.me>"
+  ],
+  "description": "A angular directive wrapper for Twitter Bootstraps typeahead plugin",
+  "main": "dist/igTypeahead.js",
+  "keywords": [
+    "angular",
+    "typeahead",
+    "directive",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "src",
+    "bower.json",
+    "Gruntfile.js",
+    "package.json"
+  ]
+}
